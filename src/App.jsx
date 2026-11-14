@@ -453,6 +453,7 @@ function Field({ label, name, type = 'text' }) {
       <input
         type={type}
         name={name}
+        autoComplete={{ name: 'name', phone: 'tel', email: 'email' }[name]}
         className="min-h-12 rounded-md border border-slate-300 bg-white px-4 text-slate-900 outline-none focus:border-red-700 focus:ring-4 focus:ring-red-700/10"
       />
     </label>
